@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "TypeScript", "MongoDB", "React-i18next"],
     link: "https://tayraan.vercel.app/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/tayraan.png",
+    image: "/assets/projects/tayraan.png",
     codeSnippet: "const searchFlights = async (params: FlightSearchParams) => { try { const res = await fetch('/api/flights/search', { method: 'POST', body: JSON.stringify(params) }); const data = await res.json(); setResults(data); } catch (err) { toast.error('Search failed'); } };",
     category: "fullstack"
   },
@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "Stripe", "OpenAI", "FastAPI", "PostgreSQL"],
     link: "https://mypie.ai/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/mypie.png",
+    image: "/assets/projects/mypie.png",
     codeSnippet: "const handleConversation = async (message: string) => { try { const response = await openai.chat.completions.create({ model: 'gpt-4o', messages: [{ role: 'user', content: message }] }); setReply(response.choices[0].message.content); } catch (error) { toast.error('Failed to get AI response'); } };",
     category: "fullstack"
   },
@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "MongoDB", "Firebase", "Cloudinary"],
     link: "https://www.mobilemate.io/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/mobilemate.png",
+    image: "/assets/projects/mobilemate.png",
     codeSnippet: "const fetchLatestPhones = async () => { try { const response = await fetch('/api/phones/latest'); const data = await response.json(); setPhones(data); } catch (error) { console.error('Failed to fetch phones:', error); } };",
     category: "fullstack"
   },
@@ -150,7 +150,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "Redux", "TailwindCSS", "Prisma", "MongoDB"],
     link: "https://todo-app-irum.vercel.app/",
     github: "https://github.com/irum-shah78/Todo-App",
-    image: "./assets/projects/task-mgmt.png",
+    image: "/assets/projects/task-mgmt.png",
     codeSnippet: "const handleAddTask = async () => {if (taskName.trim() && todoId) {try {await dispatch(addTask({ name: taskName, todoId }));setTaskName('');toast.success('Task added successfully!');} catch (error) {toast.error('Failed to add task');}} else {toast.error('Please enter a task name');}}",
     category: "fullstack"
   },
@@ -161,7 +161,7 @@ export const PROJECTS: Project[] = [
     tech: ["React", "Vite", "TypeScript", "Tailwind CSS"],
     link: "https://patient-companion-eta.vercel.app/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/patient-companion.png",
+    image: "/assets/projects/patient-companion.png",
     codeSnippet: "const addReminder = (reminder: Reminder) => { setReminders(prev => [...prev, reminder]); toast.success('Reminder added!'); };",
     category: "react"
   },
@@ -171,7 +171,7 @@ export const PROJECTS: Project[] = [
     tech: ["React", "JavaScript", "Tailwind CSS"],
     link: "https://care-closure-snowy.vercel.app/login",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/care-closure.png",
+    image: "/assets/projects/care-closure.png",
     codeSnippet: "const handleLogin = async (credentials: Credentials) => { try { await auth.signIn(credentials); navigate('/dashboard'); } catch (err) { setError('Invalid credentials'); } };",
     category: "react"
   },
@@ -181,7 +181,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "Redux", "Prisma", "MongoDB", "Cloudinary"],
     link: "https://e-commerce-store-irum.vercel.app/",
     github: "https://github.com/irum-shah78/E-commerce-Store",
-    image: "./assets/projects/e-commerce.png",
+    image: "/assets/projects/e-commerce.png",
     codeSnippet: "export const useCart = () => { const context = useContext(CartContext); return context; };",
     category: "react"
   },
@@ -191,7 +191,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     link: "https://creche-home.vercel.app/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/creche-home.png",
+    image: "/assets/projects/creche-home.png",
     codeSnippet: "const bookAppointment = async (formData: AppointmentForm) => { await fetch('/api/book', { method: 'POST', body: JSON.stringify(formData) }); toast.success('Appointment requested!'); };",
     category: "react"
   },
@@ -201,7 +201,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "TypeScript"],
     link: "https://fidget-admin.vercel.app/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/fidget-admin.png",
+    image: "/assets/projects/fidget-admin.png",
     codeSnippet: "const fetchUsers = async () => { const data = await fetch('/api/users').then(res => res.json()); setUsers(data); };",
     category: "react"
   },
@@ -211,7 +211,7 @@ export const PROJECTS: Project[] = [
     tech: ["React", "Vite", "Three.js", "TypeScript"],
     link: "https://3-d-bolt.vercel.app/",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/3d-bolt.png",
+    image: "/assets/projects/3d-bolt.png",
     codeSnippet: "useFrame(() => { ref.current.rotation.y += 0.005; }); <mesh ref={ref}><boxGeometry /><meshStandardMaterial color='steelblue' /></mesh>",
     category: "react"
   },
@@ -221,7 +221,7 @@ export const PROJECTS: Project[] = [
     tech: ["React", "JavaScript", "Tailwind CSS"],  
     link: "https://clone-reactjs.netlify.app/",
     github: "https://github.com/irum-shah78/youtube-clone",
-    image: "./assets/projects/youtube-clone.png",  
+    image: "/assets/projects/youtube-clone.png",  
     codeSnippet: "const fetchVideos = async (query) => { try { const res = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${API_KEY}`); const data = await res.json(); setVideos(data.items); } catch (err) { console.error('API error:', err); } };",
     category: "react"
   },
@@ -232,7 +232,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://chipswebsite.netlify.app/",
     github: "https://github.com/irum-shah78/Chips-Website",
-    image: "./assets/projects/chips-website.png",
+    image: "/assets/projects/chips-website.png",
     codeSnippet: "document.querySelector('.flavor-btn').addEventListener('click', () => { document.querySelector('.products').scrollIntoView({ behavior: 'smooth' }); });",
     category: "html-css-js"
   },
@@ -242,7 +242,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript", "Swiper.js", "ScrollReveal.js"],
     link: "https://irum-shah78.github.io/Restaurant-Landing-Page/",
     github: "https://github.com/irum-shah78/Restaurant-Landing-Page",
-    image: "./assets/projects/restaurant-landing.png",
+    image: "/assets/projects/restaurant-landing.png",
     codeSnippet: "const swiper = new Swiper('.testimonial-slider', { loop: true, autoplay: { delay: 5000 }, pagination: { el: '.swiper-pagination', clickable: true } });",
     category: "html-css-js"
   },
@@ -252,7 +252,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     link: "https://irum-shah78.github.io/Admin-Dashboard/",
     github: "https://github.com/irum-shah78/Admin-Dashboard",
-    image: "./assets/projects/admin-dashboard.png",
+    image: "/assets/projects/admin-dashboard.png",
     codeSnippet: "document.getElementById('darkModeToggle').addEventListener('click', () => { document.body.classList.toggle('dark-mode'); });",
     category: "html-css-js"
   },
@@ -262,7 +262,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS"],
     link: "https://irum-shah78.github.io/McBlog-FamilyFirst/",
     github: "https://github.com/irum-shah78/McBlog-FamilyFirst",
-    image: "./assets/projects/mcblog.png",
+    image: "/assets/projects/mcblog.png",
     codeSnippet: "/* Pure CSS responsive navigation toggle */ .nav-toggle:checked ~ .nav-menu { display: block; }",
     category: "html-css-js"
   },
@@ -272,7 +272,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Unsplash API"],
     link: "https://irum-shah78.github.io/Image-Search-App/",
     github: "https://github.com/irum-shah78/Image-Search-App",
-    image: "./assets/projects/image-search-app.png",
+    image: "/assets/projects/image-search-app.png",
     codeSnippet: "fetch(`https://api.unsplash.com/search/photos?query=${query}&page=${page}&client_id=${API_KEY}`).then(res => res.json()).then(data => { displayImages(data.results); });",
     category: "html-css-js"
   },
@@ -282,7 +282,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     link: "https://irum-shah78.github.io/Text-to-Speech-Converter/",
     github: "https://github.com/irum-shah78/Text-to-Speech-Converter",
-    image: "./assets/projects/text-to-speech.png",
+    image: "/assets/projects/text-to-speech.png",
     codeSnippet: "const utterance = new SpeechSynthesisUtterance(textInput.value); speechSynthesis.speak(utterance);",
     category: "html-css-js"
   },
@@ -292,7 +292,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://irum-shah78.github.io/Weather-App/",
     github: "https://github.com/irum-shah78/Weather-App",
-    image: "./assets/projects/weather-app.png",
+    image: "/assets/projects/weather-app.png",
     codeSnippet: "fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`).then(res => res.json()).then(data => { updateUI(data); });",
     category: "html-css-js"
   },
@@ -302,7 +302,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://irum-shah78.github.io/QR-Code-Generator/",
     github: "https://github.com/irum-shah78/QR-Code-Generator",
-    image: "./assets/projects/qr-generator.png",
+    image: "/assets/projects/qr-generator.png",
     codeSnippet: "new QRCode(document.getElementById('qrcode'), { text: input.value, width: 200, height: 200 });",
     category: "html-css-js"
   },
@@ -313,7 +313,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "n8n", "OpenAI API (GPT + DALL·E)", "LinkedIn API"],
     link: "#", 
     github: "https://github.com/irum-shah78", 
-    image: "./assets/projects/linkedin-carousel-automation.png",
+    image: "/assets/projects/linkedin-carousel-automation.png",
     codeSnippet: "const summarizeAndGenerate = async (article) => { const summary = await openai.chat.completions.create({ model: 'gpt-4o', messages: [{ role: 'user', content: `Summarize into 4 key points: ${article}` }] }); const images = await Promise.all(summary.choices[0].message.content.split('\\n').map(point => openai.images.generate({ prompt: point, n: 1, size: '1024x1024' }))); };",
     category: "ai-automation"
   },
@@ -323,7 +323,7 @@ export const PROJECTS: Project[] = [
     tech: ["n8n", "OpenAI API", "Gmail API", "Google Sheets API", "Multi-LLM Routing (GPT, Gemini, Claude, Perplexity)"],
     link: "#",
     github: "https://github.com/irum-shah78",
-    image: "./assets/projects/ai-workflow-automation.jpg",
+    image: "/assets/projects/ai-workflow-automation.jpg",
     codeSnippet: "const rankCitations = async (sources) => { const ranked = await openai.chat.completions.create({ model: 'gpt-4o', messages: [{ role: 'system', content: 'Rank these sources by credibility and relevance' }, { role: 'user', content: JSON.stringify(sources) }] }); return ranked.choices[0].message.content; };",
     category: "ai-automation"
   },

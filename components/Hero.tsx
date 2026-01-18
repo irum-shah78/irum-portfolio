@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
       <div className="relative">
         <div className="absolute inset-0 bg-blue-600/20 blur-3xl rounded-full scale-150 -z-10"></div>
         <img 
-          src="./assets/profile-whitebg.jpg" 
+          src="/assets/profile-whitebg.jpg" 
           alt={PERSONAL_INFO.name} 
           className="w-40 h-40 rounded-full border-4 border-slate-800 p-1 shadow-2xl object-cover grayscale hover:grayscale-0 transition-all duration-700"
         />
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
         <a href="#projects" className="px-8 py-4 bg-white text-slate-950 rounded-full font-bold hover:bg-blue-500 hover:text-white transition-all transform hover:-translate-y-1">
           View Portfolio
         </a>
-        <a href="./assets/resume/Irum-Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-slate-900 text-white border border-slate-700 rounded-full font-bold hover:border-blue-500 transition-all flex items-center gap-2">
+        <a href="/assets/resume/Irum-Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-slate-900 text-white border border-slate-700 rounded-full font-bold hover:border-blue-500 transition-all flex items-center gap-2">
           <Download size={18} /> Resume.pdf
         </a>
       </div>
